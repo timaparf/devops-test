@@ -48,3 +48,8 @@ variable "workers_desired_size" {
   type        = number
   default     = 3
 }
+
+variable "autoscaler_enabled" {
+  type = bool
+  default = true
+}
