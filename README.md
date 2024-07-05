@@ -11,3 +11,9 @@
 - EKS cluster should be in it's own private subnets. Subnets that are currently configured in `private_subnets` variable in VPC module are already taken, so you need to create additional set of subnets in the same VPC. Take `/22` range for them.
 - EKS cluster should have autoscaling enabled
 - Basically that's all
+
+### EKS Deployment (Result of perforimng task)
+- Firstly you need to apply `./eks_subnets` for creating additional set of subnets
+- Apply `./k8s` for creating EKS cluster
+- Review `vars.tf` for updating variables
+- EKS cluster have autoscailing enabled by eks_managed_node_groups. Use variables to adjust min, max numbers of instances.
