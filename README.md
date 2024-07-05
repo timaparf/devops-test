@@ -16,4 +16,5 @@
 - Firstly you need to apply `./eks_subnets` for creating additional set of subnets
 - Apply `./k8s` for creating EKS cluster
 - Review `vars.tf` for updating variables
-- EKS cluster have autoscailing enabled by eks_managed_node_groups. Use variables to adjust min, max numbers of instances.
+- EKS cluster have eks_managed_node_groups. Use variables to adjust min, max numbers of instances.
+- autoscailing enabled by cluster autoscailing
